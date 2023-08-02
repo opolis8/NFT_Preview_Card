@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --VerydarkblueMain: hsl(217, 54%, 11%);
+    --VerydarkblueCard: hsl(216, 50%, 16%);
+    --VerydarkblueLine: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    background-color: var(--VerydarkblueMain);
+    font-family: 'Outfit', sans-serif;
+    color: var(--Softblue);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    background-color: var(--VerydarkblueCard);
+    padding: 20px;
+    border-radius: 3%;
+}
+
+
+.etherium_img, .clock_img{
+    width: 12px;
+    height: 15px;
+
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--VerydarkblueLine);
+    padding-bottom: 10px;
+}
+h2{
+    color: white;
+}
+.image {
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    background: url(images/image-equilibrium.jpg) round;
+}
+    .image:hover {
+        background: url(images/icon-view.svg) center no-repeat;
+        background-color: var(--Cyan);
+        cursor: pointer;
+        opacity: .5;
+        
+        
+    }
+.equi:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+  
+a{
+    color: var(--White);
+    text-decoration: none;
+}
+.last{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-top: 15px;
+    
+}
+#avatar{
+    border: 2px solid var(--White);
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+}
+.last:hover a{
+    color: var(--Cyan);
+}
+
+.last > p{
+    margin-left: 15px;
+}
+
+.para{
+    margin-bottom: 10px;
+}
+.ETH{
+    color: var(--Cyan);
+}
